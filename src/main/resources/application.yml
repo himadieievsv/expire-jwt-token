@@ -1,0 +1,21 @@
+server:
+  port: 8090
+  servlet:
+    session:
+      persistent: false
+      cookie:
+        path: /auth/line
+        max-age: 0
+        domain:
+
+demo:
+  jwt:
+    issuer: "mydomain.com"
+    token-expiration: 1d
+
+spring:
+  thymeleaf:
+    cache: false
+    mode: HTML
+  jpa:
+    show-sql: true
